@@ -14,3 +14,110 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+
+    /* CSS for SIDEBAR > VERTICAL ICON ITEMS */
+.active{
+  background-color: whitesmoke;
+  position: absolute;
+  height: 226px;
+  right: 17px;
+  width: 156px;
+  /* box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px; */
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: ease-in-out 0.3s;
+}
+
+.hidden {
+  position: absolute;
+  top: -150px;
+}
+
+.active > ul > li {
+  padding: 6px 4px;
+  margin-top: 10px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.active > ul {
+  text-align: center;
+  padding: 0px;
+}
+
+.active > ul > li:hover {
+  background-color: #dcf8c6;
+}
+
+.disabled {
+  color:grey
+}
+
+
+/* CSS for login page */
+
+
+.google-btn {
+  width: 184px;
+  height: 42px;
+  background-color: #d6492f;
+  border-radius: 2px;
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,.25);
+}
+
+
+  .google-icon-wrapper {
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 1px;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: #fff;
+  }
+  .google-icon {
+    position: absolute;
+    margin-top: 11px;
+    margin-left: 11px;
+    width: 18px;
+    height: 18px;
+  }
+  .btn-text {
+    float: right;
+    margin: 11px 11px 0 0;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    font-family: "Roboto";
+  }
+  .google-btn:hover {
+    box-shadow: 0 0 6px #d6492f;
+    cursor: pointer;
+  }
+  .google-btn:active {
+    background:  #d6492f;
+  }
+
+  @media (max-width: 542px){
+    .google-btn{
+      width: 140px;
+      height: 35px;
+    }
+
+    .btn-text {
+      font-size: 9px;
+    }
+
+    .google-icon {
+      width: 17px;
+      height: 17px;
+      margin-top: 8px;
+      margin-left: 8px;
+    }
+
+    .google-icon-wrapper {
+      width: 32px;
+      height: 32px;
+    }
+  }
